@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rankingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:text="RANKING"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/rankingListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/returnButton"
+        android:layout_below="@id/rankingTitle"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="VOLVER"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
