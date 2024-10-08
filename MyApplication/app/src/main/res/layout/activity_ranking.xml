@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/rankingTitle"
@@ -17,8 +19,6 @@
         android:id="@+id/rankingListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_above="@id/returnButton"
-        android:layout_below="@id/rankingTitle"
         android:layout_weight="1" />
 
     <Button
@@ -27,7 +27,6 @@
         android:layout_height="60dp"
         android:text="VOLVER"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_gravity="center" /> <!-- Cambia a layout_gravity para centrar el botón -->
 
-</RelativeLayout>
+</LinearLayout>
